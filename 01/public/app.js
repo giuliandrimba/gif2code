@@ -45141,6 +45141,7 @@ function init() {
   composer.addPass(bloom);
 
   var controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableZoom = false
   controls.target.set(0, 0, 0);
   controls.damping = 0.2;
   controls.enablePan = false;
